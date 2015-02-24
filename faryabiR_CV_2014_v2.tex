@@ -1,0 +1,386 @@
+%\documentclass[margin,line, centered]{res}
+\documentclass[12pt, centered, centered]{res_yy}
+\usepackage{mathabx}
+
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+      
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{enumerate}[#1]}{\end{enumerate}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactenum}[#1]}{\end{compactenum}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+
+
+\newsectionwidth{-0.05in}
+%\resumewidth{6in}
+
+\begin{document}
+
+\name{Robert Babak Faryabi \vspace*{.1in}}
+
+\begin{resume}
+%%%%% Contact %%%%%%%%%%%
+%\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{4.5in}p{3in}}
+Laboratory of Genome Integrity			& \hspace{-0.4in}{\it Office:}  (301) 435-6485\\
+National Cancer Institute                                 & \hspace{-0.4in}{\it Cell:}    (281) 300-3349 \\            
+National Institutes of Health    			& \hspace{-0.4in}{\it E-mail:}  faryabib@mail.nih.gov\\         
+Bethesda, MD 20892		& \\   %\hspace{-0.4in}{\it Web:} http://ccr.cancer.gov/labs/lab.asp?labid=920     
+\end{tabular}
+
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+%%%% Education %%%%%%%%%%
+\section{\sc  Education}
+\vspace{0.2in}
+\begin{list1}
+
+\item[] {\bf National Institutes of Health}, Bethesda, MD \hfill 2009--present\\
+Postdoctoral Research Fellow\\
+Mentor: Dr.  Andre Nussenzweig
+\vspace{.1in}
+
+\item[] {\bf Texas A\&M University}, College Station, TX \hfill 2005-2009\\
+Ph.D. in Computational Biology\\
+Adviser: Dr. Edward R. Dougherty
+\vspace{.1in}
+
+\item[] {\bf Sharif University of Technology}, Tehran, Iran \hfill 1996-1997\\
+M.Sc. in Electrical Engineering
+\vspace{.1in}
+
+\item[] {\bf Sharif University of Technology}, Tehran, Iran \hfill 1991-1995\\
+B.Sc. in Electrical Engineering 
+\end{list1}
+
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+
+%%%%%%%%%%%%%%% Journal Publications %%%%%%%%%%%%
+\section{\sc Journal Publications}
+\vspace{.1in}
+*co-first authors
+\vspace{.1in}
+\begin{enumerate}
+
+\item  M.A. Santos, {\bf {R.B. Faryabi}}, A.V. Ergen, A.M. Day, A. Malhowski, A. Canela, M. Onozawa, J. Lee, E. Callen, P. Gutierrez-Martinez, H. Chen, N. Wong, N. Finkel, A. Deshpande, S. Sharrow, D.J. Rossi, K. Ito, K. Ge, P.D. Aplan, S.A. Armstrong, A. Nussenzweig, ``DNA-Damage Induced Differentiation of Leukemic Cells as an Anti-Cancer Barrier'', \underline{{\emph{Nature}}},  DOI $10.1038$/nature$13483$. 
+
+%\item  F. Polato, E. Callen, N. Wong, {\bf {R.B. Faryabi}}, S. Bunting, H.T. Chen, M. Kozak, M.J. Kruhlak, C.R. Reczek, W.H. Lee, T. Ludwig, R. Baer, L. Feigenbaum, S. Jackson, A. Nussenzweig, ``CtIP-mediated resection is essential for viability and can operate independently of BRCA1'', \newline \underline{{\emph{Journal of Experimental Medicine}}},  211(6):1027-36, Jun 2, 2014
+
+\item  J. Barlow$^{*}$, {\bf {R.B. Faryabi}}$^{*}$, E. Callen, N. Wong, A. Malhowski, H.T. Chen, G. Gutierez-Cruz, H. Sun, P. McKinnon, G. Wright, R. Casellas, D.~F. Robbiani, L. Staudt, O. Fernandez-Capetillo, A. Nussenzweig, ``Identification of Early Replicating Fragile Sites that Contribute to Genome Instability'', \underline{{\emph{Cell}}},  vol.~152, no.~3, pp. 620-632, January 2013.  \underline{*co-first authors}
+
+\item  E. Callen, {\bf {R.B. Faryabi}}, M. Luckey,  B. Hao,  J. Daneil, W. Yang, H.W. Sun, G. Dressler, W. Peng, H. Chi, K. Ge, M. S. Krangel, J. Park, , A. Nussenzweig, ``The DNA Damage- and Transcription-Associated Protein Paxip1 Controls Thymocyte Development and Emigration'',  \underline{{\emph{Immunity}}}, vol.~37, no.~6, pp. 971-985, December 2012.
+
+\item  E. Callen, M. Di Virgilio, M.J. Kruhlak , M. Nieto-Soler, N. Wong, H.T. Chen,  {\bf {R.B. Faryabi}}, F. Polato, M. Santos, L.M. Starnes, D.R. Wesemann, J.E. Lee, A. Tubbs, B.P. Sleckman, J.A. Daniel, K. Ge, F.W. Alt, O. Fernandez-Capetillo, M.C. Nussenzweig, A. Nussenzweig, ``53BP1 Mediates Productive and Mutagenic DNA Repair through Distinct Phosphoprotein Interactions'', \underline{{\emph{Cell}}},  vol.~153, no.~6, pp. 1266-1280, June 2013.
+
+\item  S. Bunting, E. Callen, M. Kozak,  J. Kim,  N. Wong, A. Lopez-Contreras, T. Ludwig, R. Baer, {\bf {R.B. Faryabi}}, A. Malhowski, H.-T Chen, O. Fernandez-Capetillo, A D'Andrea, A. Nussenzweig, ``BRCA1 Functions Independently of Homologous Recombination in DNA Interstrand Crosslink Repair'',  \\ \underline{{\emph{Molecular Cell}}}, vol.~46, no.~2, 27, pp. 125-135, April 2012.
+
+\item G. Vahedi, {\bf {R.B. Faryabi}}, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Sampling-Rate-Dependent Probabilistic Boolean Networks'',  \underline{{\emph{Journal of Theoretical Biology}}}, vol.~261, no.~4, pp. 463-477, December 2009.
+
+\item {\bf {R.B. Faryabi}} G. Vahedi, A. Datta, J.-F. Chamberland, E. R. Dougherty, 
+``Recent Advances in the Control of Markovian Gene Regulatory Networks'', \underline{{\emph{Current Genomics}}}, vol.~10, no.~7, pp. 540-547, November 2009.
+
+\item G. Vahedi, {\bf {R.B. Faryabi}}, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Optimal Intervention Strategies for Cyclic Therapeutic Methods'', \underline{{\emph{IEEE Transactions on Biomedical Engineering}}},  vol.~56, no.~2, pp.~281--291, 
+February 2009.
+
+\item {\bf {R.B. Faryabi}}, G. Vahedi, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Intervention in Context-Sensitive Probabilistic Boolean Networks Revisited'', \underline{{\emph{EURASIP Journal on Bioinformatics and Systems}}} \underline{{\emph{Biology}}}, vol.~2009, Article ID 360864, 2009.
+
+\item {\bf {R.B. Faryabi}}, J.-F. Chamberland, G. Vahedi, A. Datta, E. R. Dougherty, 
+``Optimal Intervention in Asynchronous Genetic Regulatory Networks'', \underline{{\emph{IEEE Journal of Selected Topics in Signal Processing}}}, 
+vol.~2, no.~3, pp.~412--423, June 2008.
+
+\item {\bf {R.B. Faryabi}}, G. Vahedi, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+`` Optimal Constrained Stationary Intervention in Gene Regulatory Networks'', \underline{{\emph{EURASIP Journal on Bioinformatics and Systems}}} \underline{{\emph{Biology}}} vol.~2008, Article ID 620767, 2008.
+
+\item G. Vahedi, {\bf {R.B. Faryabi}}, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Intervention in Gene Regulatory Networks via a Stationary Mean-First-Passage-Time Control Policy'', \underline{{\emph{IEEE Transactions on}}} \underline{{\emph{Biomedical Engineering}}}, vol.~2, no.~10, 2319-2331, October 2008.
+
+\item {\bf {R.B. Faryabi}}, A. Datta, E. R. Dougherty, 
+``On Approximate Stochastic Control in Genetic Regulatory Networks'', \underline{{\emph{IET Journal of Systems Biology}}}, 
+vol.~1, no.~6, pp.~361--368, November 2007.
+
+\end{enumerate}
+
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+
+%%%%%%%%%%%%%%% Conference Publications %%%%%%%%%%%%
+\section{\sc Conference Proceedings}
+\begin{enumerate}
+
+\item {\bf {R.B. Faryabi}}, G. Vahedi, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Open-Loop Feedback Intervention: Control of Gene Regulatory Networks with Unknown Context'',  in \emph{Workshop on Genomic Signal Processing and Statistics}, 
+, Minneapolis, Minnesota, May 2009.
+
+\item {\bf {R.B. Faryabi}}, G. Vahedi, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Constrained Intervention in a Cancerous Mammalian Cell-Cycle Network'',  
+in \emph{Workshop on Genomic Signal Processing and Statistics}, 
+Phoenix, Arizona, June 2008.
+
+\item G. Vahedi, {\bf {R.B. Faryabi}}, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Modeling Cyclic Therapy in Gene Regulatory Networks'',  
+in \emph{Workshop on Genomic Signal Processing and Statistics}, 
+Phoenix, Arizona, June 2008.
+
+\item G. Vahedi, {\bf {R.B. Faryabi}}, J.-F. Chamberland, A. Datta, E. R. Dougherty, 
+``Mean First-Passage Time Control Policy versus Reinforcement-Learning Control Policy in Gene Regulatory Networks'',  in \emph{American Control Conference}, 
+Seattle, Washington, June 2008.
+
+\item {\bf {R.B. Faryabi}}, J.-F. Chamberland, G. Vahedi, A. Datta, E. R. Dougherty, 
+``Optimal Intervention in Semi-Markov-based Asynchronous Genetic Regulatory Networks'',  
+in \emph{American Control Conference}, Seattle, Washington, June 2008.
+
+\item {\bf {R.B. Faryabi}}, A. Datta, E. R. Dougherty, 
+``On Reinforcement Learning in Genetic Regulatory Networks'',  
+in \emph{IEEE Workshop on Statistical Signal Processing}, 
+Madison, Wisconsin, August 2007.
+\end{enumerate}
+
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+%%%%%%%%%%%%%%% Invited Presentations %%%%%%%%%%%%
+\section{\sc Invited Presentations}
+\vspace{.2in}
+\begin{list2}
+\item[$\diamond$] IEEE Workshop on Genomic Signal Processing and Statistics, Houston, TX, November 2013
+%\vspace{0.05in}
+\item[$\diamond$] Bioinformatics and Bio-imaging Seminar, Virginia Tech University, Arlington, VA, November 2013
+%\vspace{0.05in}
+\item[$\diamond$] Center of Excellence in Chromosome Biology Workshop on Chromosome Biology, Bethesda, MD, June 2013
+%\vspace{0.05in}
+\item[$\diamond$] Green Center for Systems Biology, University of Texas Southwestern Medical Center, Dallas, TX, April 2009
+%\vspace{0.05in}
+\item[$\diamond$] National Center for Biotechnology Information, Bethesda, MD, March 2009
+%\vspace{0.05in}
+\item[$\diamond$] ABCS Workshop on Bioinformatics, Computational Biology and Systems Biology, College Station, TX, February 2008
+%\vspace{0.05in}
+\item[$\diamond$] Institute of Systems Biology, Seattle, WA, June 2008
+\end{list2}
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+%%%%%%%%%%%%%%% Honors and Awards %%%%%%%%%%%%
+\section{\sc Honors and Awards} 
+\vspace{.2in}
+\begin{list1}
+\item[$\diamond$] Texas A\&M Student Research Award Prize, 2007
+%\vspace{0.075in}
+\item[$\diamond$] Edward S. Rogers Sr. Scholarship, University of Toronto, ON, Canada, 2004
+%\vspace{0.075in}
+\item[$\diamond$] Edward S. Rogers Sr. Scholarship, University of Toronto, ON, Canada, 2003
+\end{list1}
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+%%%%%%%%%%%%%%% Teaching and Mentoring %%%%%%%%%%%%
+\section{\sc Teaching and Mentoring} 
+\vspace{.2in}
+\begin{list2}
+\item[$\diamond$] National Institutes of Health Undergraduate Mentoring: two students, 2013-2014
+%\vspace{0.075in}
+\item[$\diamond$] Teaching Assistant, Network Programming, University of Toronto, 2005
+%\vspace{0.075in}
+\item[$\diamond$] Teaching Assistant, System Design \& Technical Communication, University of Toronto, 2004
+%\vspace{0.075in}
+\item[$\diamond$] Teaching Assistant, Computer Networks, University of Toronto, 2003
+\end{list2}
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+
+
+%%%%%%%%%%%%%%% Poster Presentations %%%%%%%%%%%%
+\section{\sc Conference Presentations}
+\vspace{.2in}
+\begin{list2}
+\item[$\diamond$] Keystone Symposia, DNA Replication and Recombination, Banff, AL, Canada, March 2013
+%\vspace{0.05in}
+\item[$\diamond$] RECOMB Conference on Regulatory and Systems Genomics, San Francisco, CA, November 2012
+%\vspace{0.05in}
+\item[$\diamond$] Keystone Symposia, Epigenomics and Chromatin Dynamics, Keystone, CO, January 2012
+\end{list2}
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+%%%%%%%%%%%%%%% Media Coverage %%%%%%%%%%%%
+\section{\sc Media Coverage} 
+\vspace{.2in}
+\begin{list2}
+\item[$\diamond$] ``Breaking News on Fragile Sites in Cancer'', Cancer Cell, 2013
+\item[$\diamond$] ``Damage Control for a Natural Killer'', Cell, 2013
+\item[$\diamond$] ``Early Replication Fragile Sites: Where Replication--Transcription Collisions Cause Genetic Instability'', The EMBO Journal, 2013
+%\item[$\diamond$] Discovery of new class of damage-prone DNA regions could lead to better cancer treatments, ScienceDaily, 2014
+%\vspace{0.075in}
+%\item[$\diamond$] Early replication fragile sites: where replication - transcription collisions cause genetic instability, The EMBO Journal, 2013
+%\vspace{0.075in}
+%\item[$\diamond$] A new mechanism that contributes to the evolution of cancer, ScienceDaily, 2013
+%\vspace{0.075in}
+\item[$\diamond$] ``DNA Breaks Early in Replication Process Associated with B Cell Cancers'', National Cancer Institute News Note, 2013
+%\vspace{0.075in}
+%\item[$\diamond$] Discovery of new class of damage-prone DNA regions could lead to better cancer treatments, EurekAlert, 2013
+\end{list2}
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+%%%%%%%%%%%%%%% Research Experience %%%%%%%%%%%%
+\section{\sc Work \& Research Experience}
+\vspace{0.2in}
+\begin{list2}
+\item[] Postdoctoral Fellow \hfill 2009-present \\
+National Cancer Institute, Bethesda, MD
+\vspace{0.1in}
+\item[] Research Assistant \hfill 2005-2009 \\
+Genomic Signal Processing Laboratory, Texas A\&M University, TX
+\vspace{0.1in}
+\item[] Research Assistant \hfill 2003-2005\\
+Wireless and Internet Research Laboratory, University of Toronto, ON, Canada
+\vspace{0.1in}
+\item[] Design Engineer \hfill 1999-2003\\
+Dow Chemical Design \& Construction, Houston, TX
+\end{list2}
+\vspace{-.1in}
+\rule{\linewidth}{0.05mm}
+
+
+%%%%%%%%%%%%%%% Professional Services %%%%%%%%%%%%
+\section{\sc Professional Services} 
+\vspace{.2in}
+\begin{list2}
+\item Technical Program Committee:
+%\vspace{0.05in}
+\begin{list1}
+\item[] IEEE Workshop on Genomic Signal Processing and Statistics, 2014
+\item[] IEEE Workshop on Genomic Signal Processing and Statistics, 2013
+\end{list1}
+%\vspace{0.1in}
+\item Reviewer:
+%\vspace{0.05in}
+\begin{list1}
+\item[] IEEE Transactions in Biomedical Engineering, EURASIP Journal of Bioinformatics and Systems Biology, IET Journal of Systems Biology, IEEE Journal of Selected Topics in Signal Processing
+\end{list1}
+\end{list2}
+
+%%%%%%%%%%%%%%% Professional Affiliation %%%%%%%%%%%%
+%\section{\sc Professional Affiliation} 
+%\begin{list2}
+%\item Member, International Society for Computational Biology (\textbf{ISCB})
+%\item Member, Institute of Electrical and Electronics Engineers (\textbf{IEEE})
+%\end{list2}
+
+
+\newpage
+\vspace{.03in}
+\rule{\linewidth}{0.1mm}
+%%%%%%%%%%%%%%% References %%%%%%%%%%%%
+\section{\sc References} 
+\begin{list1}
+%%%%%%%% Ref 1%%%%%%%%%%%%%%%%%%%% 
+\item[] \textbf{Dr. Andre Nussenzweig}       
+\begin{list2} 		
+\item[]  Chief of Laboratory of Genome Integrity
+\item[] National Cancer Institute
+\item[] Building 37, Room 1108, Bethesda, MD
+\item[] (301)-435-6425
+\item[] nussenza@mail.nih.gov
+\end{list2}
+\vspace{.1in}
+%%%%%%%% Ref 3%%%%%%%%%%%%%%%%%%%% 
+\item[] \textbf{Dr. Edward R. Dougherty}       
+\begin{list2} 		
+\item[] Director of Center for Bioinformatics and Genomic Systems Engineering
+\item[] Texas A\&M University
+\item[] Zachry Engineering Center, College Station, TX 77843, USA
+\item[] (979) 862-8896
+\item[] edward@ece.tamu.edu
+\end{list2}
+\vspace{.1in}
+%%%%%%%% Ref 3%%%%%%%%%%%%%%%%%%%%
+\item[] \textbf{Dr Oscar Fernandez-Capetillo}       
+\begin{list2} 		
+\item[] Leader of Genome Instability Group
+\item[] Spanish National Cancer Research Centre
+\item[] Melchor Fernandez Almagro, 3\item[] Madrid, 28029, SPAIN
+\item[] +34(917)328-000 Ext: 3480
+\item[] ofernandez@cnio.es
+\end{list2}
+\vspace{.1in}
+%%%%%%%% Ref 4%%%%%%%%%%%%%%%%%%%%
+\item[] \textbf{Dr. Michael Bittner}       
+\begin{list2} 		
+\item[] Co-Director of Computational Biology Division
+\item[] Translational Genomics Research Institute
+\item[] 445 N. Fifth Street, Phoenix, AZ 85004, USA 
+\item[] (602) 343-8808
+\item[] mbittner@tgen.org
+\end{list2}
+\vspace{.1in}
+%
+%%%%%%%%% Ref 2%%%%%%%%%%%%%%%%%%%%
+%\item[] \textbf{Dr. Aniruddha Datta}       
+%\begin{list2} 		
+%\item[] Professor of Electrical \& Computer Engineering
+%\item[] Texas A\&M University
+%\item[] Zachry Engineering Center, College Station, TX 77843, USA
+%\item[] (979) 845-5917
+%\item[] datta@ece.tamu.edu
+%\end{list2}
+%\vspace{.1in}
+%%%%%%%% Ref 5%%%%%%%%%%%%%%%%%%%%
+%\item[] \textbf{Dr. Ilya Shmulevich}       
+%\begin{list2} 		
+%\item[] Associate Professor
+%\item[] Institute for Systems Biology
+%\item[] 1441 N 34th Street, Seattle, WA 98103-8904, USA 
+%\item[] (206) 732-1212
+%\item[] is@ieee.org
+%\end{list2}
+%\vspace{.1in}
+\end{list1}
+
+\end{resume}
+\end{document}
